@@ -847,7 +847,7 @@ class ZPP_DynAABBPhase extends ZPP_Broadphase{
             };
             node.moved=false;
         }
-        var pre=null;
+        var pre:ZPP_AABBPair=null;
         var cur=pairs;
         while(cur!=null){
             {
