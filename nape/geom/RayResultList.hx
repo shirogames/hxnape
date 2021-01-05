@@ -616,10 +616,10 @@ class RayResultList{
         if(zpp_inner.immutable)throw "Error: "+"RayResult"+"List is immutable";
         #end
         if(zpp_inner.reverse_flag){
-            while(!empty())pop();
+            while(!empty())pop().dispose();
         }
         else{
-            while(!empty())shift();
+            while(!empty())shift().dispose();
         }
     }
     /**
